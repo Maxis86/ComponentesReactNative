@@ -8,7 +8,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 export const HomeScreen = () => {
     return (
         <View>
-            <Text>Home Screen </Text>
+            <Text>Home Screens </Text>
             <Icon
                 name="ios-chatbubble-ellipses"
                 size={50}
