@@ -15,12 +15,12 @@ const manuItems:MenuItem[] = [
     {
         name: 'Animation 101',
         icon: 'cube-outline',
-        conponents: 'Animation101Screen'
+        conponent: 'Animation101Screen'
     },
     {
         name: 'Animation 102',
         icon: 'albums-outline',
-        conponents: 'Animation102Screen'
+        conponent: 'Animation102Screen'
     }
 ]
 
