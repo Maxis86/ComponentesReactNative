@@ -4,25 +4,9 @@ import React from 'react'
 import { FlatList } from 'react-native'
 import { View, Text } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import Icon from 'react-native-vector-icons/Ionicons'
 import { FlatListMenuItems } from '../components/FlatListMenuItems'
-import { MenuItem } from '../interfaces/appInterfaces'
 import { styles } from '../theme/appTheme'
-
-
-
-const manuItems:MenuItem[] = [
-    {
-        name: 'Animation 101',
-        icon: 'cube-outline',
-        conponent: 'Animation101Screen'
-    },
-    {
-        name: 'Animation 102',
-        icon: 'albums-outline',
-        conponent: 'Animation102Screen'
-    }
-]
+import {menuItems} from '../dataMenu/menuItems'
 
 export const HomeScreen = () => {
 
@@ -52,7 +36,7 @@ export const HomeScreen = () => {
         <View style={{flex:1, ...styles.globalMargin}}>
 
             <FlatList
-                data={manuItems}
+                data={menuItems}
                 renderItem={({item}) => <FlatListMenuItems menuItem={item}/>}
                 keyExtractor={(item)=>item.name}
                 ListHeaderComponent={()=>renderListHeader()}
